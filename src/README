@@ -21,3 +21,10 @@ What is the goal?
 
 A scalable, simple, controllable, versatile data generator that can change over time and technology.
 
+Scalable:  multi-thread, multi-node, map-reduce, etc
+simple:    one command line does it all.
+controllable: control the total size, total item number, reproduce the result
+versatile: data types (fs, db, mail, vm); code types (ascii, unicode, ...); file type (text, image, video, ...)
+data source: artifical or from web.
+time: data mutates over time
+technology: plugins?  modules?  APIs?  web-services?
