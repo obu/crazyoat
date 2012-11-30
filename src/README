@@ -1,0 +1,23 @@
+packages and their intentions:
+
+All package are prefixed with dev.oat, which is crazyoat standard.
+
+app: application level program.  Each file here should have a main() method.
+db:  database related APIs.  Can be sub-divided into mysql, oracle, sql server, etc.
+distribution:  something like normal distribution, even distribution, etc. 
+email: email related APIs.  e.g. exchange, sendmail, etc.
+filesys: file system related APIs, e.g. files, directories, symbolic links, etc.
+input: dealing with command line options, property files, environment variables, etc.
+network: network related APIs, e.g. client, server, socket, different protocols, etc
+pattern: various patterns
+pattern.content:  provides patterned content that is controllable.
+pattern.tree:  provide a tree structure that can be used to search an item and provide a path to it.
+randomization: randomization service, handling the seed.
+space: anything related to size, etc.
+time: anything related to scheduling, etc.
+vm: like file system, db, and email, this vm deals with virtual machines, as data.
+
+What is the goal?
+
+A scalable, simple, controllable, versatile data generator that can change over time and technology.
+
