@@ -4,6 +4,7 @@
  */
 package dev.oat.distribution;
 import java.util.Random;
+import java.util.Date;
 
 /**
  *
@@ -12,13 +13,21 @@ import java.util.Random;
 public class NormalDistribution extends CDistribution {
 
     static final int MAX_SEQUENCE = 1000;
+    
     private double average;
     private double stdav;
+    
     Random rand = new Random();
     private long seed;
+    private static int index=0;
 
     private double[] sequence = new double[MAX_SEQUENCE];
 
+    public NormalDistribution() {
+        seed = (new Date()).getTime();
+        rand.setSeed(seed);
+        getSequence();
+    }
     public NormalDistribution(long seed) {
         this.seed = seed;
         rand.setSeed(seed);
@@ -26,8 +35,9 @@ public class NormalDistribution extends CDistribution {
     }   
     
     private void getSequence() {
-        for (int i = 0; i< MAX_SEQUENCE; i++) 
+        for (int i = 0; i< MAX_SEQUENCE; i++) {
             sequence[i] = rand.nextGaussian();
+        }
     }
     
     
@@ -49,7 +59,8 @@ public class NormalDistribution extends CDistribution {
 
     @Override
     public double getValue(long id) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        index = (int) (id % MAX_SEQUENCE);
+        return sequence[index] + 1000;
     }
 
 

@@ -13,8 +13,8 @@ pattern: various patterns
 pattern.content:  provides patterned content that is controllable.
 pattern.tree:  provide a tree structure that can be used to search an item and provide a path to it.
 randomization: randomization service, handling the seed.
-space: anything related to size, etc.
-time: anything related to scheduling, etc.
+space: anything related to location, etc. answers the where question.
+time: anything related to scheduling, etc. answers the when question.
 vm: like file system, db, and email, this vm deals with virtual machines, as data.
 
 What is the goal?

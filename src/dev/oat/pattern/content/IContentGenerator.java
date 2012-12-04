@@ -7,6 +7,9 @@ package dev.oat.pattern.content;
  */
 public interface IContentGenerator {
     
+    public final String UNICODE = "unicode";
+    public final String ASCII   = "ascii";
+    
     /**
      * given a size, the generator should return 
      * a string of that size in byte

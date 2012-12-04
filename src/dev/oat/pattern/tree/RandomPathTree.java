@@ -12,7 +12,7 @@ public class RandomPathTree extends CPathTree {
 
     @Override
     public String getPath(long id) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return "Z:\\data\\";
     }
     
 }

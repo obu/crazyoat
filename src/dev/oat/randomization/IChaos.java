@@ -2,17 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package dev.oat.app;
+package dev.oat.randomization;
 
 /**
  *
  * @author obu
  */
-public class OatApp {
-
-    public OatApp() {}
-    public OatApp(String[] args) {
-    }
-    
+public interface IChaos {
     
 }
